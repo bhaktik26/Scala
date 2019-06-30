@@ -5,6 +5,16 @@ object OOPBasics extends App {
   println(person.age)
   println(person.x)
   person.greet("Daniel")
+
+  val author = new Writer("Charles", "Dickens", 1812)
+  val novel = new Novel("Great Expectations", 1861, author)
+  val imposter = new Writer("Charles", "Dickens", 1812)
+  println(novel.authorAge())
+  println(novel.isWrittenBy(author))
+  println(novel.isWrittenBy(imposter))
+  val counter = new Counter
+  counter.inc.print
+  counter.inc.inc.inc.print
 }
 
 // constructor, we can specify a default value
@@ -42,7 +52,7 @@ Writer - first name, surname and year
  */
 
 class Writer(firstName: String, surname: String, val year: Int) {
-  def fullName(): String = firstName + surname
+  def fullName(): String = firstName + " " + surname
 }
 
 class Novel(name: String, yearOfRelease: Int, author: Writer) {
@@ -51,4 +61,31 @@ class Novel(name: String, yearOfRelease: Int, author: Writer) {
   def isWrittenBy(author: Writer): Boolean = author == this.author
 
   def copy(newYearOfRelease: Int): Novel = new Novel(name, newYearOfRelease, author)
+}
+
+/*
+Counter class
+ - receives an int value
+ - method current count
+ - method to increment/decrement => new Counter
+ - overload inc/dec to receive an amount
+ */
+
+class Counter(val count: Int = 0) {
+  def inc = new Counter(count + 1) // immutability
+  def dec = new Counter(count - 1)
+
+  //  def inc(amount: Int) = new Counter(count + amount)
+  //  def dec(amount: Int) = new Counter(count - amount)
+  def inc(n: Int): Counter = {
+    if (n <= 0) this
+    else inc.inc(n - 1)
+  }
+
+  def dec(n: Int): Counter = {
+    if (n <= 0) this
+    else dec.dec(n - 1)
+  }
+
+  def print = println(count)
 }
