@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9582de38-5bd8-4211-b4bf-760c00f677f7" name="Default Changelist" comment="method notations">
-      <change beforePath="$PROJECT_DIR$/src/playground/FLOW007.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/FLOW007.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/InheritanceAndTraits.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +18,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/playground/FLOW007.java">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/InheritanceAndTraits.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="46" column="112" selection-start-line="46" selection-start-column="112" selection-end-line="46" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -34,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -56,6 +55,7 @@
         <option value="$PROJECT_DIR$/src/playground/JavaPlayground.java" />
         <option value="$PROJECT_DIR$/src/lectures/part2oop/Objects.scala" />
         <option value="$PROJECT_DIR$/src/playground/FLOW007.java" />
+        <option value="$PROJECT_DIR$/src/lectures/part2oop/InheritanceAndTraits.scala" />
       </list>
     </option>
   </component>
@@ -87,14 +87,20 @@
               <item name="learn-scala" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="playground" type="462c0819:PsiDirectoryNode" />
+              <item name="lectures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn-scala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn-scala" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lectures" type="462c0819:PsiDirectoryNode" />
+              <item name="part2oop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learn-scala" type="b2602c69:ProjectViewProjectNode" />
               <item name="learn-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="playground" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaPlayground.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -120,13 +126,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FLOW007">
+  <component name="RunManager" selected="Application.InheritanceAndTraits">
     <configuration name="FLOW007" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="playground.FLOW007" />
       <module name="learn-scala" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InheritanceAndTraits" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.InheritanceAndTraits" />
+      <module name="learn-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part2oop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,26 +192,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringOps" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.StringOps" />
-      <module name="learn-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part1basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InheritanceAndTraits" />
         <item itemvalue="Application.FLOW007" />
         <item itemvalue="Application.Objects" />
         <item itemvalue="Application.MethodNotations" />
         <item itemvalue="Application.OOPBasics" />
-        <item itemvalue="Application.StringOps" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +254,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24158126" />
@@ -260,12 +266,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.38170347" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.40851736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.51892745" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5021962" side_tool="true" weight="0.38170347" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49926794" weight="0.329653" />
@@ -382,11 +388,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/playground/FLOW007.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="223">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/package.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/InheritanceAndTraits.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="46" column="112" selection-start-line="46" selection-start-column="112" selection-end-line="46" selection-end-column="112" />
         </state>
       </provider>
     </entry>
