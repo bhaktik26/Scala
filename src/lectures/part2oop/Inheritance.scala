@@ -1,11 +1,10 @@
 package lectures.part2oop
 
-object InheritanceAndTraits extends App {
+object Inheritance extends App {
 
   // single class inheritance
   class Animal {
     val creatureType = "wild"
-
     def eat = println("nomnom")
   }
 
@@ -32,7 +31,6 @@ object InheritanceAndTraits extends App {
     //override val creatureType = "domestic"
     override def eat: Unit = println("crunch,crunch")
   }
-
   val dog = new Dog("domestic")
   dog.eat
   println(dog.creatureType)
